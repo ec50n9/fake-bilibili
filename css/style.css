@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url(../font/iconfont.woff2);
+}
+
+.iconfont{
+    font-family: iconfont;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: relative;
+    height: 155px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 155px;
+    background-image:url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+.banner__gradient{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(0,0,0,.4),transparent);
+}
+
+.banner__logo-wrap{
+    width: 1198px;
+}
+
+.banner__logo{
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 220px;
+    height: 50%;
+}
+
+.banner__img{
+    height: 100%;
+}
+
+.mini-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 24px;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    height: 36px;
+    line-height: 36px;
+}
+
+.nav-link__list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-link__item{
+    margin-right: 12px;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.iconfont--tv{
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.iconfont--mobile{
+    font-size: 18px;
+}
+
+.nav-search-box{
+    position: relative;
+    width: 320px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 10px;
+    padding: 0 38px 0 16px;
+    border: 1px solid hsla(0,0%,100%,0);
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.search__input{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    color: #999;
+    background-color: #fff;
+    font-size: 14px;
+    transition: all .2s;
+    border: none;
+    outline: medium;
+}
+
+.search__btn{
+    position: absolute;
+    right: 0;
+    width: 48px;
+    height: 36px;
+    line-height: 26px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #505050;
+    background-color: #e7e7e7;
+}
+
+.search__btn:hover{
+    color: #00a1d6;
+}
+
+.nav-user-center{
+    display: flex;
+    height: 36px;
+    line-height: 36px;
+}
+
+.user-action{
+    display: flex;
+    list-style: none;
+}
+
+.user-action__item{
+    float:left;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.user-action__item--login{
+    width: 64px;
+    height: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+.unlogin-avatar{
+    width: 36px;
+    height: 36px;
+    color: #00a1d6;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.contribute{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 14px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #fb7299;
+    cursor: pointer;
+}
+
+/* 首页链接栏 */
+.primary-menu-wrap{
+    width: 1198px;
+    margin: 0 auto;
+}
+
+.primary-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.tab-line{
+    display: block;
+    height: 46px;
+    width: 1px;
+    background-color: #e7e7e7;
+    margin: 0 8px;
+}
+
+.page-tab__list{
+    display: flex;
+    list-style: none;
+}
+
+.page-tab__item{
+    width: 50px;
+    height: 68px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.page-tab__link{
+    display: block;
+    text-decoration: none;
+    color: #212121;
+    transition: color .3s;
+}
+
+.page-tab__icon{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto 4px;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    background-color: #ff5c7c;
+    border-radius: 50%;
+}
+
+.page-tab__icon > .iconfont{
+    display: block;
+}
+
+.page-tab__icon--yellow{
+    background-color: #fcba2a;
+}
+
+.page-tab__icon--orange{
+    background-color: #ff716d;
+}
+
+.page-tab__icon--green{
+    background-color: #6dc781;
+}
+
+.channel-menu{
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许分行 */
+    flex-direction: column;
+    flex-grow: 1;
+    height: 68px;
+}
+
+.channel-menu__item{
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.channel-menu__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.channel-menu__num{
+    display: inline-block;
+    width: 32px;
+    /* 重置行高，否则会使用父元素行高导致高度异常 */
+    line-height: normal;
+    margin-left: 1px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #73c9e5;
+    border-radius: 2px;
+    transform: scale(.85);
+}
+
+.channel-menu__num--more{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.friendship-link{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 220px;
+    height: 68px;
+}
+
+.friendship-link__item{
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.friendship-link__svg{
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    background-color: #6dc781;
+    vertical-align: middle;
+}
+
+.friendship-link__desc{
+    margin-left: 4px;
+}
