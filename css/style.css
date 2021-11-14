@@ -157,6 +157,10 @@
     color: #fff;
     margin-left: 12px;
     cursor: pointer;
+    /* 应该考虑到文字长度的问题 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .user-action__item--login{
@@ -289,7 +293,8 @@
     color: #fff;
     background-color: #73c9e5;
     border-radius: 2px;
-    transform: scale(.85);
+    /* 不可以使用scale来设置节点，会引起1px不等于1px*/
+    /* transform: scale(.85); */
 }
 
 .channel-menu__num--more{
